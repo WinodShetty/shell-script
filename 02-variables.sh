@@ -2,7 +2,7 @@
 
 
 
-NAME=MS Dhoni
+NAME="MS Dhoni"
 PROFFESION=Cricket
 COUNTRY=India
 
