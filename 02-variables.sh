@@ -2,9 +2,10 @@
 
 
 
-NAME="MS Dhoni"
-PROFFESION=Cricket
-COUNTRY=India
+PERSON1=Dhoni
+PERSON2=Vinod
 
-echo " $NAME Proffesion is $PROFFESION "
-echo " $NAME played for $COUNTRY "
+echo "Hi $PERSON1 : Hi $PERSON2"
+echo "$PERSON2 : Heloo $PERSON1"
+echo "$PERSON1 : How are you doing"
+echo "$PERSON2 : Doing well"
