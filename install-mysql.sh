@@ -21,4 +21,3 @@ if [ $? -ne 0 ]
     echo "installing MySQL ... is success"
 fi
 
-dnf install git
