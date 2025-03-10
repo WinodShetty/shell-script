@@ -11,14 +11,14 @@ if [ $USERID -ne 0 ]
     
 fi
  
-dnf install mysqld -y
+dnf install mysql -y
 
 if [ $? -ne 0 ]
  then 
-    echo "Installing mysql ... is failure"
+    echo "Installing MySQL ... is failure"
     exit 1
  else 
-    echo "installing mysql ... is success"
+    echo "installing MySQL ... is success"
 fi
 
 dnf install git
