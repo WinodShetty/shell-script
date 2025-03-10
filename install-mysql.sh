@@ -7,4 +7,4 @@ then
     echo "error: you must have sudo acces to execute this script"
 fi
 
-dnf install mysql -y
+dnf install mysqld -y
