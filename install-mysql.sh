@@ -11,14 +11,24 @@ if [ $USERID -ne 0 ]
 
 fi
 
-dnf install mysql -y
+dnf list installed mysql
 
-if [$? -ne 0 ]
-then 
-   echo "error: installing mysql is .....failure"
-   exit 1
+if [ $? -ne 0 ]
+   then
+      dnf install mysql -y
+
+   if [ $? -ne 0 ]
+      then 
+         echo "error: installing mysql is .....failure"
+         exit 1
+   else
+      echo "installing mysql is .... success"
+   fi
 else
-   echo " error: installing mysql is .... success"
+   echo "mysql is already .... installed"
+
+fi
+
 
 dnf install git -y
    
