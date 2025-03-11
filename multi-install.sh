@@ -34,7 +34,8 @@ if [ $USERID -ne 0 ]
    exit 1
 fi
 
-for package in $@ 
+for package in $@ # $@ means speacial variable, manam yennaiana arguments pass cheyochu 
+                # here we are passing like Git, MySQL, Nginx thorugh package
     do
         dnf list installed $package &>>$LOG_FILE_NAME
         if [ $? -ne 0 ]
