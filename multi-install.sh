@@ -42,5 +42,5 @@ for package in $@
             VALIDATE $? "Installing $package"
         else
             echo -e "$package is $Y already installed $N"
-    done
-fi
+       fi
+done
