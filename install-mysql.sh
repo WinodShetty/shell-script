@@ -9,6 +9,7 @@ if [ $USERID -ne 0 ]
 fi
 
 dnf install mysql -y
+dnf install git -y
    # echo $? exit status ni theluskovadaniki. 0 means success, 0 thappa yem vachina its failed
    # exit status ante manam enter chesina last command, last command status
     
