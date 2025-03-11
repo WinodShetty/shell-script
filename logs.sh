@@ -8,7 +8,7 @@ N="\e[0m"
 USERID=$(id -u)
 
 LOGS_FOLDER="/var/log/shell-script-logs"
-LOG_FILE=$(echo $0 | cut "." -f1)
+LOG_FILE=$(echo $0 | cut -d "." -f1)
 TIMESTAMP=$(date +%Y-%m-%d-%H-%M-%S)
 LOG_FILE_NAME="$LOGS_FOLDER/$LOG_FILE-$TIMESTAMP.log"
 
